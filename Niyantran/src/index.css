@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Font Pairing Classes */
+html[data-font-pairing="serif"] {
+  --font-heading: 'Cinzel', 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html[data-font-pairing="technical"] {
+  --font-heading: 'Barlow Semi Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html[data-font-pairing="modern"] {
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #FDF6E7;
+  color: #16311F;
+}
+
+.dark body {
+  background-color: #171F1A;
+  color: #FDF6E7;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Boutique SaaS Card Styles */
+.kpi-card {
+  background-color: #FBEAAE;
+  border: 1px solid #F0C954;
+  box-shadow: 0 4px 12px rgba(19, 42, 30, 0.05);
+}
+
+.dark .kpi-card {
+  background-color: #272C1F;
+  border: 1px solid #3E4631;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.panel-card {
+  background-color: #FFFDF7;
+  border: 1px solid #EFE4CF;
+  box-shadow: 0 4px 14px rgba(19, 42, 30, 0.04);
+}
+
+.dark .panel-card {
+  background-color: #222E26;
+  border: 1px solid #2E3D33;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
